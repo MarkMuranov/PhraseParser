@@ -12,19 +12,12 @@
 class InsertRowsCommand {
 public:
     bool parse(Tokenizer& tokenizer) {
-        return PhraseParser::newPhrase(tokenizer)
-            .keyword(Keywords::insert)
-            .keyword(Keywords::into)
-            .word(tableName) // Sets 'tableName' to the word
-            .commaSeparatedWords(tableColumns) // Extracts table columns
-            .keyword(Keywords::values)
-            .commaSeparatedWords(rowValues) // Extracts row values. This will NOT account for multiple rows.
-            .parse(); // Ends the builder
+        // TODO
+        return true;
     }
 
 private:
-    std::string tableName;
-    std::vector<std::string> tableColumns;
-    std::vector<std::string> rowValues;
+    // Store extracted data
+    // TODO
 
 };
