@@ -26,11 +26,11 @@ int main() {
         { Keywords::semicolon, ";" }
     };
 
-    tokenizer.tokenList = {
-            { Keywords::create, "create" },
-            { Keywords::database, "database" },
-            { Keywords::unknown, "my_database" },
-    };
+//    tokenizer.tokenList = {
+//            { Keywords::create, "create" },
+//            { Keywords::database, "database" },
+//            { Keywords::unknown, "my_database" },
+//    };
 
     InsertRowsCommand command;
     command.parse(tokenizer);
